@@ -1,0 +1,230 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f8fafc;
+  font-family: "Segoe UI", sans-serif;
+  color: #1e293b;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #0f172a;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.statCard {
+  background: white;
+  border-radius: 16px;
+  padding: 22px;
+  text-align: center;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.statCard h3 {
+  color: #2563eb;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.statCard p {
+  color: #475569;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.inputBox {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.inputBox input {
+  flex: 1;
+  padding: 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  font-size: 15px;
+  color: #1e293b;
+  background: white;
+}
+
+.inputBox input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.filters button {
+  background: white;
+  color: #334155;
+  border: 1px solid #e2e8f0;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.filters button:hover {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.taskCard {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.taskInfo h3 {
+  color: #0f172a;
+  font-size: 18px;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.status {
+  font-size: 14px;
+  font-weight: 600;
+  color: #475569;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.addBtn {
+  background: #2563eb;
+  color: white;
+  padding: 14px 18px;
+  border-radius: 12px;
+}
+
+.addBtn:hover {
+  background: #1d4ed8;
+}
+
+.editBtn {
+  background: #f59e0b;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 10px;
+}
+
+.editBtn:hover {
+  background: #d97706;
+}
+
+.progressBtn {
+  background: #8b5cf6;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 10px;
+}
+
+.progressBtn:hover {
+  background: #7c3aed;
+}
+
+.doneBtn {
+  background: #10b981;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 10px;
+}
+
+.doneBtn:hover {
+  background: #059669;
+}
+
+.deleteBtn {
+  background: #ef4444;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 10px;
+}
+
+.deleteBtn:hover {
+  background: #dc2626;
+}
+
+.empty {
+  text-align: center;
+  margin-top: 40px;
+  color: #64748b;
+  font-size: 16px;
+}
+
+.taskInfo input {
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 15px;
+  color: #1e293b;
+}
+
+
+@media (max-width: 768px) {
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .taskCard {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .actions {
+    width: 100%;
+  }
+
+  .inputBox {
+    flex-direction: column;
+  }
+
+  .addBtn {
+    width: 100%;
+  }
+}

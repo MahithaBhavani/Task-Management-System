@@ -1,0 +1,55 @@
+body {
+  font-family: Arial;
+  background: #0f172a;
+  color: white;
+  margin: 0;
+}
+
+.app-container {
+  width: 600px;
+  margin: 40px auto;
+}
+
+.title {
+  text-align: center;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.task-card {
+  background: #1e293b;
+  padding: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status {
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+
+.status.TODO { background: orange; }
+.status.IN_PROGRESS { background: blue; }
+.status.COMPLETED { background: green; }
+
+.delete-btn {
+  background: red;
+  color: white;
+  border: none;
+}
